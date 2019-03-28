@@ -1812,12 +1812,12 @@ class TCPDF_STATIC {
 	 * @return Returns a file pointer resource on success, or FALSE on error.  
 	 * @public static
 	 */
-	public static function fopenLocal($filename, $mode) {
+	public static function fopenLocal($filename, $mode) {/*
 		if (strpos($filename, '://') === false) {
 			$filename = 'file://'.$filename;
 		} elseif (stream_is_local($filename) !== true) {
 			return false;
-		}
+		}*/
 		return fopen($filename, $mode);
 	}
 
